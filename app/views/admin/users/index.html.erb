@@ -1,0 +1,72 @@
+
+<div class="pageContainer">
+  <div class="pageHeader">
+    <div class="pageBreadCrumbs">
+	  <div class="row">
+		<ol class="breadcrumb">
+			
+		</ol>
+	  </div>
+	</div>
+	<div>
+	
+	</div>
+	<div class="pageLinks">
+		<ul class="message-actions">
+			<li>
+				<a href="<%=new_admin_user_url%>" class="btn rounded btn-primary  pageReloader" style="text-decoration: none;"> <%= t 'buttons.add' %> </a>
+			</li>
+			
+		</ul>
+	</div>
+  </div>
+  
+  <div class="pageContent">
+    <div class="mobilePageHeader"></div>
+    <!-- Box Start -->
+    <div class="box green">
+    <!-- Content Start -->
+      <div class="content">
+        <div class="inner">
+          <div class="row">
+            <div class="panel-body">
+            <span class="patient_info">Users Information</span></br>
+              <section id="flip-scroll" class="tableContent" style="padding-bottom: 2%;">
+                <table class="table center">
+                  <thead class="cf">
+                    <tr>
+					  <th>SINO</th>
+					  <th>FIRST NAME</th>
+					  <th>LAST NAME</th>
+					  <th>EMAIL</th>
+					</tr>
+                  </thead>
+                  <tbody>
+                    <%  @user.each_with_index do |users, index| %>
+					<tr>
+					  <td>
+							
+					  </td>
+					  <td>
+					  	<%=users.try(:firstname)%>
+					  </td>
+					  <td>
+					  	<%=users.try(:lastname)%>
+					  </td>
+					  <td>
+					  	<%=users.try(:email)%>
+					  </td>
+					</tr>
+					<%end%>
+                  </tbody>
+                </table>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+

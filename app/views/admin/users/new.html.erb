@@ -1,0 +1,37 @@
+<div class="pageContainer" style="background-color:lightgrey;margin-top:5%;">
+  <div class="pageHeader" style="float:left;width:100%;background-color:lightgrey;">
+    <div class="pageBreadCrumbs" style="width:50%;float:left;">
+	  <div class="row">
+		<ol class="breadcrumb" style="background: transparent;border-radius: 0px;border-top: 0px solid #e6e6e6;margin-bottom: 0px;padding: 8px 15px;float: left;">
+			
+		</ol>
+	  </div>
+	</div>
+	<div class="pageLinks" style="float: right;width: auto;">
+		<ul class="message-actions" style="float:right;padding: 0px 0px 0 7px;display: inline-block;">
+			<li>
+				<a href="javascript:void(0);" class="right_click_disabled btn rounded btn-primary  pageReloader" id="patient_save_button"> 
+					<%= t 'buttons.save' %> </a>
+			</li>
+			<li>
+				<a href="<%= admin_users_url%>" class="btn rounded btn-primary pageReloader"> <%= t 'buttons.cancel' %> </a>
+			</li>
+		</ul>
+	</div>
+  </div>
+
+<div class="pageContent">
+	<div class="mobilePageHeader"></div>
+		<!-- Box Start -->
+		<div class="box green">
+			<!-- Content Start -->
+			<div class="content smallpageDataScroll">
+				<div class="container">
+					<%= form_for @user, url: admin_users_path, html: {multipart: true, id: 'patient_form', class: 'basic-form'} do |f| %>
+						<%=render 'form', form: f%>
+				    <% end %>
+				</div>								
+			</div>
+		</div>
+</div>
+</div>		

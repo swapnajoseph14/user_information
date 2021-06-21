@@ -1,0 +1,57 @@
+
+<div class="pageContainer">
+  <div class="pageHeader">
+    <div class="pageBreadCrumbs">
+	  <div class="row">
+		<ol class="breadcrumb">	
+		</ol>
+	  </div>
+	</div>
+  </div>
+  
+  <div class="pageContent">
+    <div class="mobilePageHeader"></div>
+    <!-- Box Start -->
+    <div class="box green">
+    <!-- Content Start -->
+      <div class="content">
+        <div class="inner">
+          <div class="row">
+            <div class="panel-body">
+            <span class="patient_info">User Information</span></br>
+              <section id="flip-scroll" class="tableContent" style="padding-bottom: 2%;">
+                <table class="table center">
+                  <thead class="cf">
+                    <tr>
+					  <th>First Name</th>
+					  <th>Last Name</th>
+					  <th>Email</th>
+					  
+					</tr>
+                  </thead>
+                  <tbody>
+                  	<%puts"******-------------"+@patient.inspect%>
+					<tr>
+					  <td>
+					  	<%=@patient.try(:firstname)%>
+					  </td>
+					  <td>
+					  	<%=@patient.try(:lastname)%>
+					  </td>
+					  <td>
+					  	<%=@patient.try(:email)%>
+					  </td>
+					  
+					</tr>
+                  </tbody>
+                </table>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+

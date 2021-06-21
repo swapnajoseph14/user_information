@@ -1,0 +1,84 @@
+// Place all the styles related to the admin/patients controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.breadcrumb > oi {
+    display: inline-block;
+    background: transparent;
+    border-radius: 0px;
+    border-top: 0px solid #e6e6e6;
+    margin-bottom: 0px;
+    padding: 8px 15px;
+    float: left;
+}
+.ul{margin-top: 0;margin-bottom: 10px;}
+.message-actions li {
+    padding: 0px 0px 0 7px;
+    display: inline-block;
+}
+.btn-primary {
+    background-color: #8175c7;
+}
+.btn {
+    padding: 10px 25px;
+    margin-bottom: 0;
+    margin-right: 4px;
+    border: 0px;
+    color: #ffffff !important;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+  background-color:#b3f0ff;
+}
+.pageContainer{background-color:#e0ebeb;margin-top:5%;}
+.pageHeader{float:left;width:100%;background-color:#e0ebeb;}
+.pageBreadCrumbs{width:50%;float:left;}
+.pageLinks{float: right;width: auto;}
+.message-actions{float:right;padding: 0px 0px 0 7px;display: inline-block;}
+.patient_info{margin-left:46%;font-size:20px;color:#ff0000;}
+.login_form_style{width: 45%;margin-left: 26%;}
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: #e0ebeb;
+}
+button { 
+       background-color: #4CAF50; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+ 
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        background-color: lightblue;
+    }
